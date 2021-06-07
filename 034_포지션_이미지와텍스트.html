@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포지션_이미지와텍스트</title> 
+<style>
+* {margin:0; padding:0;}
+.wrap {
+	width: 730px;
+	height: 475px;
+	border: 1px solid #000;
+	margin: 20px;
+	position:relative;
+	overflow:hidden;
+}
+.wrap img {
+	width: 100%;
+	display:block;
+}
+.wrap dl {
+	background-color:#F69D87;
+	height: 150px;
+	text-align:center;
+	position: absolute;
+	bottom:-150px;
+	left:0;
+	width: 100%;
+	transition: .5s;
+}
+.wrap:hover dl {
+	bottom:0;
+}
+ 
+.wrap dl dt {
+	font-size: 24px;
+ 	 
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img src="img/flower.JPG" alt="안개꽃" />
+  <dl>
+	<dt>안개꽃 꽃말</dt>
+	<dd>맑은 마음, 깨끗한 마음, 사랑의 성공</dd>
+  </dl>
+</div>
+ 
+</body>
+</html>
+
+
+
+
+

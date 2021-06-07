@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>웹폰트 적용02</title>
+<style>
+* {margin:0; padding:0;}
+.header {
+	height: 70px;
+	background-color: #5692B7;
+	
+}
+.header ul {text-align:center;}
+.header ul li {
+	display:inline-block;
+	margin: 0 40px;
+	line-height: 70px;
+	color: #fff;
+}
+.main_visual {
+	height: 400px;
+	background-color: #F2CCC9;
+}
+.main_visual p {
+	font-size: 60px;
+	text-align:center;
+	line-height: 400px;
+}
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.wrap::after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.wrap dl {
+	width: 400px;
+	height: 400px;
+	background-color: #7CA8C4;
+	float:left;
+	text-align:center;	
+	padding: 50px;
+	box-sizing:border-box;
+	 
+}
+.wrap .box02 {
+	background-color: #88B0C9;
+}
+.wrap .box03 {
+	background-color:#ABC1D2; 
+}
+.wrap dl dt {
+	font-size: 35px;	
+	margin-bottom: 40px;
+}
+.wrap dl dd {
+	font-size: 17px;
+}
+.footer {
+	height: 40px;
+	background-color: #333;
+	text-align:center;
+	line-height: 40px;
+	color: #F2CCC9;
+}
+</style>
+</head>
+<body>
+<div class="header">
+	<ul>
+		<li>menu01</li>
+		<li>menu02</li>
+		<li>menu03</li>
+		<li>menu04</li>
+	</ul>
+</div>
+<div class="main_visual">
+	<p>main_visual</p>
+</div><!--.main_visual end-->
+<div class="wrap">
+	<dl class="box01">
+		<dt>title</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit</dd>
+	</dl>
+	<dl class="box02">
+		<dt>title</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit</dd>
+	</dl>
+	<dl class="box03">
+		<dt>title</dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit</dd>
+	</dl>
+</div><!--.wrap end-->
+
+<div class="footer">
+	footer
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

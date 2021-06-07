@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>말줄임표</title>
+<style>
+* {margin:0; padding:0;}
+p {
+	width: 500px;
+	border: 3px solid #000;
+	margin: 20px;
+}
+.box01 {
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+	overflow:hidden;
+	/*1줄 말줄임표*/
+}
+.box02 {
+	height: 75px;
+	line-height: 1.5;
+	overflow:hidden;
+	display:box; /*박스정렬*/
+	display:-webkit-box;
+	-webkit-box-orient: vertical; 
+	/*박스정렬방향 : 세로*/
+	-webkit-line-clamp:3;
+	/*말줄임표 수*/
+	text-overflow:ellipsis;
+}
+
+</style>
+</head>
+<body>
+<p class="box01">어머님, 내 나의 속의 한 이네들은 있습니다. 잠, 지나고 어머니, 어머님, 토끼, 못 시인의 지나가는 계십니다. 벌써 속의 별 위에도 추억과 잠, 내일 있습니다. 겨울이 자랑처럼 애기 별이 프랑시스 이름과, 다 까닭입니다. 이름을 아름다운 많은 까닭이요, 둘 이름과, 있습니다. 토끼, 위에 가득 새겨지는 봅니다.</p>
+<p class="box02">어머님, 내 나의 속의 한 이네들은 있습니다. 잠, 지나고 어머니, 어머님, 토끼, 못 시인의 지나가는 계십니다. 벌써 속의 별 위에도 추억과 잠, 내일 있습니다. 겨울이 자랑처럼 애기 별이 프랑시스 이름과, 다 까닭입니다. 이름을 아름다운 많은 까닭이요, 둘 이름과, 있습니다. 토끼, 위에 가득 새겨지는 봅니다.</p>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>이미지포함 레이아웃</title>
+<style>
+* {margin:0; padding:0;}
+li {list-style:none;}
+html, body {background-color: #F2EAC2;}
+.header{
+	background-color: #fff;
+	height: 70px;
+}
+.header ul {text-align:center;}
+.header ul li {
+	display:inline-block;
+	margin: 0 40px;
+	line-height: 70px;
+}
+
+.main_visual {
+	height: 400px;
+	background-color: #F24607;
+}
+.main_visual p {
+	font-size: 60px;
+	color: #fff;
+	text-align:center;
+	line-height: 400px;
+}
+.wrap {
+	width: 1200px;
+	 
+	margin:50px auto;
+}
+.wrap::after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.wrap div {
+	width: 280px;
+	float:left;
+	margin: 0 10px;
+	background-color: #ffcc00;
+	
+}
+.wrap div img {
+	width: 100%;
+}
+.wrap div p {
+	padding: 80px 50px;
+	text-align:center;
+}
+
+</style>
+
+
+</head>
+<body>
+<div class="header">
+	<ul>
+		<li>menu01</li>
+		<li>menu02</li>
+		<li>menu03</li>
+		<li>menu04</li>
+	</ul>
+</div>
+<div class="main_visual">
+	<p>main_visual</p>
+</div><!--.main_visual end-->
+
+<div class="wrap">
+	<div>
+		<img src="img/img_01.jpg" alt="산위에 앉아 있는 여성" />
+		<p>이미지에 대한 내용이 들어갔어요</p>
+	</div>
+	<div>
+		<img src="img/img_01.jpg" alt="산위에 앉아 있는 여성" />
+		<p>이미지에 대한 내용이 들어갔어요</p>
+	</div>
+	<div>
+		<img src="img/img_01.jpg" alt="산위에 앉아 있는 여성" />
+		<p>이미지에 대한 내용이 들어갔어요</p>
+	</div>
+	<div>
+		<img src="img/img_01.jpg" alt="산위에 앉아 있는 여성" />
+		<p>이미지에 대한 내용이 들어갔어요</p>
+	</div>
+</div><!--.wrap end-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

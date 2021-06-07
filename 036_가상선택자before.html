@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자</title>
+    <style>
+        * {margin:0; padding:0;}
+        li {list-style: none;}
+        a {
+            text-decoration:none; 
+            color: #333; 
+            display:block;
+        }
+        h3 {
+            font-size: 45px;
+            text-align: center;
+        }
+        h3 span {
+            position: relative;
+        }
+        h3 span::before {
+            content: '';
+            width: 100%;
+            height: 15px;
+            background-color: rgba(235, 26, 26, 0.753);
+            position: absolute;
+            bottom:5px;
+            left:0;
+            z-index: -1; 
+            /*z-index 위치설정 
+            음수 => 뒤로보내기
+            양수 => 앞으로보내기
+            position값이 있을 때 사용가능
+            */
+        }
+        .box {
+            width: 500px;
+            border: 1px solid red;
+            padding: 50px;
+            text-align:center;
+            margin: 0 auto;
+        }
+        .box dl dt {
+            font-size: 30px;
+            position: relative;
+            display:inline-block;
+            margin-bottom: 70px;
+        }
+    .box dl dt::before {
+        content:'';
+        width: 1px;
+        height: 50px;
+        background-color: #333;
+        position: absolute;
+        left:50%;
+        top:50px;
+    }
+    </style>
+</head>
+<body>
+    <h3>
+        <span>box-shadow: 박스 그림자</span>
+    </h3>
+    <div class="box">
+        <dl>
+            <dt>box-shadow</dt>
+            <dd>Nullam tempor enim vel ex fringilla tempus. Fusce molestie odio id urna fringilla sagittis. Sed vel eleifend eros, vel dictum leo. Mauris ut eros tellus. Praesent rutrum turpis ut condimentum congue.</dd>
+        </dl>
+    </div>
+
+    <!-- 연습 만들기 -->
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>텍스트 적용</title>
+<style>
+* {margin:0; padding:0;}
+div {
+  width: 800px;
+  padding: 10px;
+  background-color: #F2833D;
+  margin: 10px auto;
+}
+.align .a01 {text-align:left;}
+.align .a02 {text-align:center;}
+.align .a03 {text-align:right;}
+.align .a04 {writing-mode: vertical-lr;}
+/**vertical-lr 세로로 작성 / lr => leftright)**/
+
+.color {background-color: #F77454;}
+.color .c01 {color: white;}
+.color .c02 {color: #fff;}
+.color .c03 {color: rgb(255, 255, 255);}
+.color .c04 {color: rgba(255, 255, 255, 0.2);}
+
+.letter {
+	background-color:#E05757;
+	color: #fff;
+}
+.letter .l01 {letter-spacing: -5px;}
+.letter .l02 {letter-spacing: 5px;}
+
+.word {background-color:#F754C0;}
+.word .w01 {word-spacing:-5px;}
+.word .w02 {word-spacing: 7px;}
+
+.line {background-color: #D251ED;}
+.line p {
+	line-height: 24px;
+	/*글자 기본 크기 16px 
+	글자간격 : 1.5 ~ 2;
+	16 * 1.5 = 24px
+        line-height: 24px;
+	line-height: 1.5;
+	*/
+}
+</style>
+</head>
+<body>
+<div class="align">
+  <h6>text-align : 텍스트 수평 방향 정렬 설정</h6>
+  <p class="a01">left</p>
+  <p class="a02">center</p>
+  <p class="a03">right</p>
+  <p class="a04">세로로 작성</p>
+</div><!--.align end-->
+
+<div class="color">
+<h6>color: 텍스트 컬러 설정</h6>
+<p class="c01">컬러이름</p>
+<p class="c02">16진수 = HEX</p>
+<P class="c03">rgb</P>
+<p class="c04">rgba</p>
+</div>
+
+<div class="letter">
+<h6>letter-spacing: 텍스트 내에서 문자 사이의 간격을 설정함.</h6>
+<p class="l01">letter-spacing: 텍스트 내에서 문자 사이의 간격을 설정함.</p>
+<p class="l02">letter-spacing: 텍스트 내에서 문자 사이의 간격을 설정함.</p>
+</div><!--.lette end-->
+
+<div class="word">
+<h6>word-spacing: 텍스트 내에서 단어 사이의 간격을 설정함.</h6>
+<p class="w01">word-spacing: 텍스트 내에서 단어 사이의 간격을 설정함.</p>
+<p class="w02">word-spacing: 텍스트 내에서 단어 사이의 간격을 설정함.</p>
+</div>
+
+<div class="line">
+<h6>line-height: 텍스트의 줄 간격을 설정함</h6>
+<p>line-height: 텍스트의 줄 간격을 설정함</p>
+<p>line-height: 텍스트의 줄 간격을 설정함</p>
+<p>line-height: 텍스트의 줄 간격을 설정함</p>
+</div><!--.line end-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

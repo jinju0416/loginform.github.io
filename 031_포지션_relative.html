@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포지션01-relative</title> 
+<style>
+* {margin:0; padding:0;}
+.wrap {
+height: 200px;
+padding: 50px 0;
+background-color: #fff0a5;
+text-align:center;
+}
+.wrap p {
+	width: 320px;
+	height: 350px;
+	display:inline-block;
+}
+/*
+position:relative는 다른요소들에게 영향을 주지 않는 자신이 중심축이 되어 위치이동됨
+position을 사용한 후에 위치설정값 
+top, left, right, bottom중 적용
+*/
+.box01 {
+background-color: #468966;
+position: relative;
+right: -100px;
+bottom: 100px;
+}
+.box02 {
+background-color: #FFB03B;
+position:relative;
+top: 50px;
+left: 50px;
+}
+
+.box03 {background-color: #B64926;}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<p class="box01">box list</p>
+	<p class="box02">box list</p>
+	<p class="box03">box list</p>
+</div>
+</body>
+</html>
+
+
+
+
+

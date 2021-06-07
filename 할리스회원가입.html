@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할리스회원가입</title>
+
+    <style>
+
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {
+    text-decoration:none;
+    color: #333;
+    display:block;
+}
+.radio input[type="radio"]:checked + label {
+            border: 2px solid rosybrown;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="form">
+        <form action="" method="POST" autocomplete="off">
+            <div>
+                <img src="img/Untitled-1.jpg" alt="로고" />
+            </div>
+            <h3>고객님</h1>
+            <h3>환영합니다</h1>
+            <fieldset>
+                <!-- <legend>개인정보</legend> -->
+                <div>
+                    <!-- <label>성별</label> -->
+                    <input type="radio" name="clause"><span>약관전체동의</span>
+                    <input type="radio" name="clause"><span>이용약관(필수)</span>
+                    <input type="radio" name="clause"><span>개인정보 수집 및 이용동의(필수)</span>
+                    <input type="radio" name="clause"><span>E-mail 및 SMS 광고성 정보 수신동의(선택)</span>
+                </div>
+                <div>
+                    <label for="id">아이디</label>
+                    <input type="text" id="name" placeholder="아이디">
+                    <!-- placeholder : 입력창 안에 작성하는 힌트, 도움말
+                        required : 필수사항
+                        autofocus : 입력창안에 커서가 자동으로 적용
+                     -->
+                    <!-- id는 문서 안에서 중복사용 불가
+                    자바스크립트 프로그램 안에서 적용시키기 위해 사용-->
+                </div>
+                <div>
+                    <label for="pw">비밀번호</label>
+                    <input type="password" id="pw" placeholder="비밀번호">
+                </div>
+                <div>
+                    <label for="pw2">비밀번호 재확인</label>
+                    <input type="password" id="pw" placeholder="비밀번호 재확인">
+                </div>
+                <div>
+                    <label for="name">이름</label>
+                    <input type="password" id="pw" placeholder="이름">
+                </div>
+                <div class="radio">
+                    <input type="radio" id="ra" name="gender" value="man">
+                    <label fot="ra">남자/여자</label>
+                    <!-- <label>
+                        <input type="checkbox">
+                        <label>커피</label> 
+                    </div>
+                    </label>-->
+        
+                    <div class="button">
+                        <input type="submit" value="가입하기">
+                        <!-- reset : 취소, 다시쓰기
+                             submit: 동의, 제출, 확인
+                             button : 그냥 버튼 -->
+                    </div>
+            </fieldset>
+
+            </h2>
+        </form>
+    </div>
+</body>
+</html>

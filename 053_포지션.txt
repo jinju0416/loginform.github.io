@@ -1,0 +1,16 @@
+태그 < 클래스명 < 아이디명 < !important
+1점       2점           5점             100점
+
+
+<div class="class01 class02">
+div
+
+div.class01 {color: red;}
+.class01 {color: blue;}
+
+==> 컬러값은  red로 적용됨, 점수가 더 높아서...
+띄어쓰면 상위라인, 붙이면 같은 라인
+
+.class02
+div.class01
+div.class02

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포지션</title> 
+<style>
+* {margin:0; padding:0;}
+.wrap {
+	width: 400px;
+	height: 1000px;
+	background-color: #FFE6B8;
+	margin:0 auto;
+	margin-top: 100px;
+	position:relative;
+}
+.wrap p {
+	width: 100px;
+	height: 100px;
+	position:absolute;
+}
+.wrap .box01 {
+	background-color: #97E0BF;
+	right:-100px;
+	top:0;
+}
+.wrap .box02 {
+	background-color: #FFA024;
+	bottom:-100px;
+	right:0;
+	
+}
+.wrap .box03 {
+	background-color: #F0641C;
+	bottom:0;
+	left:-100px;
+}
+.wrap .box04 {
+	background-color: #916247;
+	left:0;
+	top:-100px;
+}
+.wrap .box05 {
+	background-color: #BF300F;
+	position: fixed;
+	top:50px;
+	left: 50px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<p class="box01">01</p>
+	<p class="box02">02</p>
+	<p class="box03">03</p>
+	<p class="box04">04</p>
+	<p class="box05">05</p>
+</div> 
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포지션01-absolute</title> 
+<style>
+* {margin:0; padding:0;}
+.wrap {
+	width: 400px;
+	height: 400px;
+	background-color: #fff0a5;
+	margin: 0 auto;
+	margin-top: 150px;
+	position:relative;
+}
+.wrap p {
+	position: absolute;	
+	width: 100px;
+	height: 100px;
+}
+.wrap .box01 {
+	background-color: #468966;
+	top:0;
+	/*left: 400px; */
+	right: -100px;
+}
+.wrap .box02 {
+	background-color: #FFB03B;
+	right:0;
+	bottom: -100px;
+}
+.wrap .box03 {
+	background-color: #B64926;
+	bottom:0; 
+	left: -100px;
+}
+.wrap .box04 {
+	background-color: #8E2800;
+	top: -100px;
+}
+.wrap .box05 {
+	background-color: #468966;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<P class="box01">01</p>
+	<P class="box02">02</p>
+	<P class="box03">03</p>
+	<P class="box04">04</p>
+	<P class="box05">05</p>
+</div>
+</body>
+</html>
+
+
+
+
+

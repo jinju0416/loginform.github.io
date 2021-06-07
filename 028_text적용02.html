@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>텍스트작성02</title>
+<style>
+* {margin:0; padding:0;}
+div {
+	width: 800px;
+	padding: 10px;
+	background-color: #f2833d;
+	margin: 10px;
+}
+.indent {
+	text-indent: 40px;
+	/*글자 들여쓰기*/
+}
+.break .break-all {
+	word-break: break-all;
+	/*줄바꿈 
+	break-all : 단어별 줄바꿈
+	*/
+}
+.break .keep-all {
+	word-break: keep-all;
+	/*keep-all : 단어 줄바꿈*/
+	text-align: justify;
+	/*양쪽정렬*/
+}
+</style>
+</head>
+<body>
+<div class="indent">
+	<h2>들여쓰기</h2>
+	<p>어머님, 내 나의 속의 한 이네들은 있습니다. 잠, 지나고 어머니, 어머님, 토끼, 못 시인의 지나가는 계십니다. 벌써 속의 별 위에도 추억과 잠, 내일 있습니다. 겨울이 자랑처럼 애기 별이 프랑시스 이름과, 다 까닭입니다. 이름을 아름다운 많은 까닭이요, 둘 이름과, 있습니다. 토끼, 위에 가득 새겨지는 봅니다.</p>
+</div> <!--.indent end-->
+<div class="break">
+	<h2>글자 줄바꿈</h2>
+	<p class="break-all">어머님, 내 나의 속의 한 이네들은 있습니다. 잠, 지나고 어머니, 어머님, 토끼, 못 시인의 지나가는 계십니다. 벌써 속의 별 위에도 추억과 잠, 내일 있습니다. 겨울이 자랑처럼 애기 별이 프랑시스 이름과, 다 까닭입니다. 이름을 아름다운 많은 까닭이요, 둘 이름과, 있습니다. 토끼, 위에 가득 새겨지는 봅니다.</p>
+	<h2>단어줄바꿈</h2>
+	<p class="keep-all">어머님, 내 나의 속의 한 이네들은 있습니다. 잠, 지나고 어머니, 어머님, 토끼, 못 시인의 지나가는 계십니다. 벌써 속의 별 위에도 추억과 잠, 내일 있습니다. 겨울이 자랑처럼 애기 별이 프랑시스 이름과, 다 까닭입니다. 이름을 아름다운 많은 까닭이요, 둘 이름과, 있습니다. 토끼, 위에 가득 새겨지는 봅니다.</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
